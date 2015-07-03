@@ -1,54 +1,31 @@
-<div id="sidebar" class="col-md-3 hidden-sm hidden-xs">
-	
-	<div id="profile" class="sidebar-section table">
-		<div class="table-center">
-			<a href="#" class="pull-left"><img src="http://placehold.it/40x40" alt="Michelle Garnett" class="profile-small" /></a>
-			<p class="pull-left"><a href="#">Michelle Garnett</a></p>
-			<a href="#" class="pull-right"><i class="fa fa-cog"></i></a>
-		</div>
-		<div class="clear"></div>
-	</div><!--END #profile-->
-	
-	<div id="main-nav" class="sidebar-section table">
-		<ul class="table-center">
-			<li><a ui-sref="journal">Journal</a></li>
-			<li><a ui-sref="care-plan">Care Plan</a></li>
-			<li><a ui-sref="progress-chart">Progress Chart</a></li>
-		</ul>
-	</div><!--END #main-nav-->
+<div id="sidebar" class="col-md-2 hidden-sm hidden-xs">
 	
 	<div id="goal-block">
 		<div class="side-headline table">
 			<div class="table-center">
 				<h2 class="pull-left">Your Current Goals</h2>
-				<a ui-sref="goals" class="pull-right"><i class="fa fa-plus"></i></a>
+				<a class="pull-right" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-plus"></i></a>
 			</div>
 			<div class="clear"></div>
 		</div><!--END .side-headline-->
 		
-		<div class="sidebar-section table">
-			<div class="table-center">
-				<a href="#" class="pull-left"><img src="http://placehold.it/40x40" alt="" class="profile-small" /></a>
+		<div collapse="isCollapsed">
+			<div class="sidebar-section table">
+				<div class="table-center text-center">
+					<a class="btn btn-default" ui-sref="private.goals" role="button">Add New Goal</a>
+				</div>
+				<div class="clear"></div>
 			</div>
-			<div class="clear"></div>
-		</div>
-		
-		<div class="sidebar-section table">
-			<div class="table-center">
-				<a href="#" class="pull-left"><img src="http://placehold.it/40x40" alt="" class="profile-small" /></a>
-				<p class="pull-left"><strong>Bike Riding</strong><br />4mi / 1hr 15min</p>
-				<input type="checkbox" name="" value="" class="pull-right" />
+			
+			<div class="sidebar-section table">
+				<div class="table-center">
+					<a href="#" class="pull-left"><img src="http://placehold.it/30x30" alt="" class="profile-small" /></a>
+					<p class="pull-left"><strong>Bike Riding</strong><br />4mi / 1hr 15min</p>
+					<input type="checkbox" name="" value="" class="pull-right" />
+				</div>
+				<div class="clear"></div>
 			</div>
-			<div class="clear"></div>
-		</div>
-		
-		<div class="sidebar-section table">
-			<div class="table-center">
-				<a href="#" class="pull-left"><img src="http://placehold.it/40x40" alt="" class="profile-small" /></a>
-				<p class="pull-left"><strong>Bike Riding</strong><br />4mi / 1hr 15min</p>
-				<input type="checkbox" name="" value="" class="pull-right" />
-			</div>
-			<div class="clear"></div>
+			
 		</div>
 	</div><!--END #goal-block-->
 	
@@ -56,18 +33,27 @@
 		<div class="side-headline table">
 			<div class="table-center">
 				<h2 class="pull-left">Your Care Team</h2>
-				<a ui-sref="care-team" class="pull-right"><i class="fa fa-plus"></i></a>
+				<a class="pull-right" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-plus"></i></a>
 			</div>
 			<div class="clear"></div>
 		</div><!--END .side-headline-->
 		
-		<div ng-repeat="tm in careTeamList">
-			<div class="sidebar-section table">
-				<div class="table-center">
-					<a href="#" class="pull-left"><img src="http://placehold.it/40x40" alt="Member Name" class="profile-small" /></a>
-					<p class="pull-left"><strong>{{tm.firstName}} {{tm.lastName}}</strong><br />{{tm.role}}</p>
+		<div class="sidebar-section table">
+			<div class="table-center text-center">
+				<a class="btn btn-default" role="button">View Care Team</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+		<div collapse="isCollapsed">
+			<div ng-repeat="tm in careTeamList">
+				<div class="sidebar-section table">
+					<div class="table-center">
+						<a href="#" class="pull-left"><img src="http://placehold.it/30x30" alt="Member Name" class="profile-small" /></a>
+						<p class="pull-left"><strong>{{tm.firstName}} {{tm.lastName}}</strong><br />{{tm.role}}</p>
+					</div>
+					<div class="clear"></div>
 				</div>
-				<div class="clear"></div>
 			</div>
 		</div>
 		
