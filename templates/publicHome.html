@@ -1,7 +1,30 @@
+<script>
+    WebFont.load({
+      google: {
+        families: ["Bitter:400,700,400italic","Droid Sans:400,700","Droid Serif:400,700"]
+      }
+    });
+    $( document ).ready(function() {
+      $('#email-form').on('submit','',function(e){
+        var data = $(this).serialize();
+        posting = $.post("http://api.gokurbi.com/v1/landingpgsignup",data);
+        posting.complete(function(response){
+          if(posting.responseText == "true"){
+            alert('Your journal was saved.');
+            //window.location = "<?php echo ROOT_URL.LOGGED_IN_HOME_URL; ?>"
+          }else{
+            alert('There was a problem, please try again.');
+          }
+        });
+
+        return false;
+      });
+    });
+  </script>
  <div class="w-section hero">
     <div class="w-container header_nav">
-      <a class="w-inline-block" href="index.html"><img class="logo_image" src="images/logo.png" width="104">
-      </a><a class="button" href="our-story.html">Our Story</a>
+      <a class="w-inline-block" href="index.html"><img class="logo_image" src="design/img/logo.png" width="104">
+      </a><a class="button" href="/public/our-story">Our Story</a>
     </div>
     <div class="w-container hero_copy">
       <h1>Accomplish Goals<br>Despite Multiple Sclerosis</h1>
@@ -46,19 +69,19 @@
     <div class="w-container story_container">
       <h5>This is how Kurbi works</h5>
       <div class="w-row stories">
-        <div class="w-col w-col-4 story1"><img class="story1_image" src="images/Story1.png" width="328">
+        <div class="w-col w-col-4 story1"><img class="story1_image" src="design/img/Story1.png" width="328">
           <div class="story_content">
             <div class="story1_content_title">Share a Goal</div>
             <div class="story1_content_body">Kathy, diagnosed with MS 8 years ago, wants to take advantage of her bikeable community this summer so she sets an exercise a goal on Kurbi.</div>
           </div>
         </div>
-        <div class="w-col w-col-4 story2"><img class="story2_image" src="images/Story2.png" width="337">
+        <div class="w-col w-col-4 story2"><img class="story2_image" src="design/img/Story2.png" width="337">
           <div class="story2_content">
             <div class="story2_content_title">Get Support</div>
             <div class="story2_content_body">Kathy’s son, seeing her new goal on Kurbi, decided to join Kathy to help her achieve her goal. He signed up to help her find the perfect bike.</div>
           </div>
         </div>
-        <div class="w-col w-col-4 story3"><img class="story3_image" src="images/Story3.png" width="380">
+        <div class="w-col w-col-4 story3"><img class="story3_image" src="design/img/Story3.png" width="380">
           <div class="story3_content">
             <div class="story3_title">Stay Safe</div>
             <div class="story3_content_body">Kathy’s care-providers used Kurbi to keep track of her progress and post important information on how to avoid fatigue and over-heating during exercise.</div>
@@ -72,30 +95,30 @@
   <div class="w-section goal_list_section goal_container goal1" data-ix="goal-button">
     <div class="w-container goal_container" data-ix="goal-section-on-load">
       <div class="w-row physical_goal_row">
-        <div class="w-col w-col-3 goal1"><img src="images/Exercise.png">
+        <div class="w-col w-col-3 goal1"><img src="design/img/Exercise.png">
           <div class="goal1_text">Exercise</div>
         </div>
-        <div class="w-col w-col-3 goal1"><img src="images/Travel.png">
+        <div class="w-col w-col-3 goal1"><img src="design/img/Travel.png">
           <div class="goal1_text">Travel</div>
         </div>
-        <div class="w-col w-col-3 goal1"><img src="images/Sleep.png">
+        <div class="w-col w-col-3 goal1"><img src="design/img/Sleep.png">
           <div class="goal1_text">Rest</div>
         </div>
-        <div class="w-col w-col-3 goal1"><img src="images/Diet.png">
+        <div class="w-col w-col-3 goal1"><img src="design/img/Diet.png">
           <div class="goal1_text">Diet</div>
         </div>
       </div>
       <div class="w-row physical_goal_row">
-        <div class="w-col w-col-3 goal1"><img src="images/Make.png">
+        <div class="w-col w-col-3 goal1"><img src="design/img/Make.png">
           <div class="goal1_text">Make</div>
         </div>
-        <div class="w-col w-col-3 goal1"><img src="images/Work.png">
+        <div class="w-col w-col-3 goal1"><img src="design/img/Work.png">
           <div class="goal1_text">Work</div>
         </div>
-        <div class="w-col w-col-3 goal1"><img src="images/Learn.png">
+        <div class="w-col w-col-3 goal1"><img src="design/img/Learn.png">
           <div class="goal1_text">Learn</div>
         </div>
-        <div class="w-col w-col-3 goal1"><img src="images/Find.png">
+        <div class="w-col w-col-3 goal1"><img src="design/img/Find.png">
           <div class="goal1_text">Find</div>
         </div>
       </div>
@@ -104,7 +127,7 @@
   <div class="w-section footer">
     <div class="w-row">
       <div class="w-col w-col-6 footer1">
-        <div class="footer1_text">Follow Our Progress:</div><img class="icon" src="images/twitter.png" width="20"><img class="icon2" src="images/facebook.png" width="10">
+        <div class="footer1_text">Follow Our Progress:</div><img class="icon" src="design/img/twitter.png" width="20"><img class="icon2" src="design/img/facebook.png" width="10">
       </div>
       <div class="w-col w-col-6 footer2">
         <div class="copyright">© 2011-2015 Kurbi Health, Inc.</div>
