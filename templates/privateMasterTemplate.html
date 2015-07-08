@@ -14,6 +14,7 @@
 					<!-- ADD POST FORM -->
 					<div add-post></div>
 					<!-- /ADD POST FORM -->
+
 				</div>
 			</div>
 		</div>
@@ -24,13 +25,9 @@
 <div id="page-container" class="container-fluid">
 	<div class="row">
 		
-		<!-- SIDEBAR -->
-		<div ng-include src="'design/templates/sidebar.html'"></div>
-		<!-- /SIDEBAR -->
-		
-		<div id="content" class="col-md-9">
+		<div id="content" class="col-md-10">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
+				<div class="col-md-12"><!-- col-md-8 col-md-offset-2 -->
 					
 					<!-- UI ROUTER -->
 					<div ui-view></div>
@@ -39,6 +36,10 @@
 				</div><!--END columns-->
 			</div><!--END .row-->
 		</div><!--END #content-->
+
+		<!-- SIDEBAR -->
+		<div ng-include src="'design/templates/sidebar.html'"></div>
+		<!-- /SIDEBAR -->
 
 	</div><!--END .row-->
 </div><!--END #page-container-->
