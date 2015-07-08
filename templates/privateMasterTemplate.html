@@ -1,26 +1,57 @@
 <!-- PRIVATE MASTER TEMPLATE -->
 
 <!-- HEADER -->
-<div id="header" class="container-fluid">
-	<div class="row">
-		<div class="col-sm-3 hidden-xs">
+<div id="header" class="container-fluid table">
+	<div class="row table-center">
+		<div class="col-sm-2 hidden-xs">
 			<div id="logo">
-				<a ui-sref="home"><img src="app/img/kurbi-icon-logo.png" alt="Kurbi" /></a>
+				<a ui-sref="home"><img src="app/img/kurbi-logo@2x.png" width="35" height="40" alt="Kurbi" /></a>
 			</div><!--END #logo-->
 		</div>
-		<div class="col-sm-9">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<!-- ADD POST FORM -->
-					<div add-post></div>
-					<!-- /ADD POST FORM -->
-
-				</div>
-			</div>
+		<div class="col-sm-8">
+			<!-- ADD POST FORM -->
+			<div add-post></div>
+			<!-- /ADD POST FORM -->
+		</div><!-- END col-->
+		<div class="col-sm-2 hidden-xs">
+			<div id="profile">
+				<a href="#" class="pull-left"><img src="http://placehold.it/40x40" alt="Michelle Garnett" class="profile-small" /></a>
+				<p class="pull-left"><a href="#">Michelle Garnett</a></p>
+				<a href="#" class="pull-right dropdown-toggle" type="button" id="mainMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-cog"></i></a>
+				<div class="clear"></div>
+				<ul class="dropdown-menu" aria-labelledby="mainMenu">
+					<li><a href="#">Settings</a></li>
+					<li><a ui-sref="private.journal">Journal</a></li>
+					<li><a ui-sref="private.care-plan">Care Plan</a></li>
+					<li><a ui-sref="private.progress-chart">Progress Chart</a></li>
+				  <li role="separator" class="divider"></li>
+				  <li><a href="#">Logout</a></li>
+				</ul>
+			</div><!--END #profile-->
 		</div>
 	</div><!--END .row-->
 </div><!--END #header-->
 <!-- /HEADER -->
+
+<!-- NAVBAR -->
+<div id="navbar">
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+			<div class="dropdown">
+			  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+			    Dropdown
+			    <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+			    <li><a ui-sref="private.journal">Journal</a></li>
+			    <li><a ui-sref="private.care-plan">Care Plan</a></li>
+			    <li><a ui-sref="private.progress-chart">Progress Chart</a></li>
+			  </ul>
+			</div>
+		</div>
+	</div>
+</div><!--END #navbar-->
+<!-- /NAVBAR -->
 
 <div id="page-container" class="container-fluid">
 	<div class="row">
@@ -36,6 +67,10 @@
 				</div><!--END columns-->
 			</div><!--END .row-->
 		</div><!--END #content-->
+		
+		<!-- SIDEBAR -->
+		<div ng-include src="'design/templates/sidebar.html'"></div>
+		<!-- /SIDEBAR -->
 
 		<!-- SIDEBAR -->
 		<div ng-include src="'design/templates/sidebar.html'"></div>
