@@ -3,17 +3,17 @@
 <!-- HEADER -->
 <div id="header" class="container-fluid table">
 	<div class="row table-center">
-		<div class="col-sm-2 hidden-xs">
+		<div class="col-sm-1 hidden-xs">
 			<div id="logo">
 				<a ui-sref="private.home"><img src="app/img/kurbi-logo@2x.png" width="35" height="40" alt="Kurbi" /></a>
 			</div><!--END #logo-->
 		</div>
-		<div class="col-sm-7">
+		<div class="col-sm-9">
 			<!-- ADD POST FORM -->
 			<div add-post></div>
 			<!-- /ADD POST FORM -->
 		</div><!-- END col-->
-		<div class="col-sm-3 hidden-xs">
+		<div class="col-sm-2 hidden-xs">
 			<div id="profile">
 				<a href="#" class="pull-left"><img src="http://placehold.it/40x40" alt="Michelle Garnett" class="profile-small" /></a>
 				<p class="pull-left"><a href="#">{{firstName}} {{lastName}}</a></p>
@@ -23,7 +23,7 @@
 					<li><a href="#">Settings</a></li>
 					<li><a ui-sref="private.journal">Journal</a></li>
 					<li><a ui-sref="private.care-plan">Care Plan</a></li>
-					<li><a ui-sref="private.progress-chart">Progress Chart</a></li>
+					<li><a ui-sref="private.progress-chart">Live Chart</a></li>
 				  <li role="separator" class="divider"></li>
 				  <li><a href="#">Logout</a></li>
 				</ul>
@@ -34,18 +34,18 @@
 <!-- /HEADER -->
 
 <!-- NAVBAR -->
-<div id="navbar">
+<div id="navbar" class="container-fluid">
 	<div class="row">
-		<div class="col-sm-8 col-sm-offset-2">
+		<div class="col-sm-8"><!-- col-sm-offset-2 -->
 			<div class="dropdown">
 			  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-			    Dropdown
+			    Menu
 			    <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 			    <li><a ui-sref="private.journal">Journal</a></li>
 			    <li><a ui-sref="private.care-plan">Care Plan</a></li>
-			    <li><a ui-sref="private.progress-chart">Progress Chart</a></li>
+			    <li><a ui-sref="private.progress-chart">Live Chart</a></li>
 			  </ul>
 			</div>
 		</div>
@@ -58,7 +58,7 @@
 		
 		<div id="content" class="col-md-10">
 			<div class="row">
-				<div class="col-md-12"><!-- col-md-8 col-md-offset-2 -->
+				<div class="col-md-12">
 					
 					<!-- UI ROUTER -->
 					<div ui-view></div>

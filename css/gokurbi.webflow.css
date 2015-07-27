@@ -129,6 +129,15 @@ a.w--current {
   color: white;
   font-weight: 700;
 }
+
+.home-page-button{
+  margin-left:6px !important;
+}
+
+.login-button{
+  border: none;
+}
+
 .header {
   height: 70px;
   margin-top: -53px;
@@ -561,7 +570,7 @@ a.w--current {
 }
 .form_fields {
   height: auto;
-  margin-top: 517px;
+  margin-top: 500px;
   margin-bottom: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
