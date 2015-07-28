@@ -61,6 +61,13 @@ HEADER
 	background: #cccccc;
 }
 
+.dropdown{
+	margin-left: 63px;
+}
+.dropdown button{
+	min-width: 160px;
+}
+
 /*--------------------------------------------
 BODY
 ---------------------------------------------*/

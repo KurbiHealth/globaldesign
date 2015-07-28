@@ -20,10 +20,7 @@
 				<a href="#" class="pull-right dropdown-toggle" type="button" id="mainMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-cog"></i></a>
 				<div class="clear"></div>
 				<ul class="dropdown-menu" aria-labelledby="mainMenu">
-					<li><a href="#">Settings</a></li>
-					<li><a ui-sref="private.journal">Journal</a></li>
-					<li><a ui-sref="private.care-plan">Care Plan</a></li>
-					<li><a ui-sref="private.progress-chart">Live Chart</a></li>
+				  <li><a href="#">Settings</a></li>
 				  <li role="separator" class="divider"></li>
 				  <li><a href="#">Logout</a></li>
 				</ul>
@@ -36,13 +33,14 @@
 <!-- NAVBAR -->
 <div id="navbar" class="container-fluid">
 	<div class="row">
-		<div class="col-sm-8"><!-- col-sm-offset-2 -->
+		<div class="col-sm-8 col-sm-offset-1"><!--  -->
 			<div class="dropdown">
 			  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 			    Menu
 			    <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+			    <li><a ui-sref="private.home">Home</a></li>
 			    <li><a ui-sref="private.journal">Journal</a></li>
 			    <li><a ui-sref="private.care-plan">Care Plan</a></li>
 			    <li><a ui-sref="private.progress-chart">Live Chart</a></li>
