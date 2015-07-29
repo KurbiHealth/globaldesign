@@ -42,7 +42,7 @@
 			  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 			    <li><a ui-sref="private.home">Home</a></li>
 			    <li><a ui-sref="private.journal">Journal</a></li>
-			    <li><a ui-sref="private.care-plan">Care Plan</a></li>
+			    <!--<li><a ui-sref="private.care-plan">Care Plan</a></li>-->
 			    <li><a ui-sref="private.progress-chart">Live Chart</a></li>
 			  </ul>
 			</div>
@@ -97,8 +97,8 @@ ps-container (optional) = custom CSS ID selector to which the slider div appends
     <div style="padding:20px" id="pageslide-right">
     	<div id="pageslide-header">
 	        <h2 class="pull-left">Hello World!</h2>
-	        <a ng-click="togglePageslide()" class="btn btn-default pull-right" >Close</a>
+	        <a ng-click="closePageslider()" class="btn btn-default pull-right" >Close</a>
     	</div>
-        <ng-include src="pageSliderTemplateUrl"></ng-include>
+        <div ui-view="goalNew"></div>
     </div>
 </div>
