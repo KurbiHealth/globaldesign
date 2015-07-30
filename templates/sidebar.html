@@ -12,18 +12,20 @@
 		<div collapse="isCollapsed">
 			<div class="sidebar-section table">
 				<div class="table-center text-center">
-					<a class="btn btn-default" role="button" ng-click="togglePageslider('goalNew')">Add New Goal</a>
+					<a class="btn btn-default" role="button" ng-click="openAside('right',true,'modules/goal/templates/index.html')">Add New Goal</a>
 				</div>
 				<div class="clear"></div>
 			</div>
-			
-			<div class="sidebar-section table">
-				<div class="table-center">
-					<a href="#" class="pull-left"><img src="http://placehold.it/30x30" alt="" class="profile-small" /></a>
-					<p class="pull-left"><strong>Bike Riding</strong><br />4mi / 1hr 15min</p>
-					<input type="checkbox" name="" value="" class="pull-right" />
+
+			<div ng-repeat="goal in goalsList">
+				<div class="sidebar-section table">
+					<div class="table-center">
+						<a href="#" class="pull-left"><img src="http://placehold.it/30x30" alt="" class="profile-small" /></a>
+						<p class="pull-left"><strong>{{goal.name}}</strong><br />{{goal.action}}</p>
+						<input type="checkbox" name="" value="" class="pull-right" />
+					</div>
+					<div class="clear"></div>
 				</div>
-				<div class="clear"></div>
 			</div>
 			
 		</div>
