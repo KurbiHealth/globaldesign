@@ -7,11 +7,10 @@
     $( document ).ready(function() {
       $('#email-form').on('submit','',function(e){
         var data = $(this).serialize();
-        posting = $.post("http://api.gokurbi.com/v1/landingpgsignup",data);
+        posting = $.post("http://api.gokurbi.com/v1/signup",data);
         posting.complete(function(response){
           if(posting.responseText == "true"){
             alert('Your journal was saved.');
-            //window.location = "<?php echo ROOT_URL.LOGGED_IN_HOME_URL; ?>"
           }else{
             alert('There was a problem, please try again.');
           }
