@@ -7,11 +7,10 @@
     $( document ).ready(function() {
       $('#email-form').on('submit','',function(e){
         var data = $(this).serialize();
-        posting = $.post("http://api.gokurbi.com/v1/landingpgsignup",data);
+        posting = $.post("http://api.gokurbi.com/v1/signup",data);
         posting.complete(function(response){
           if(posting.responseText == "true"){
             alert('Your journal was saved.');
-            //window.location = "<?php echo ROOT_URL.LOGGED_IN_HOME_URL; ?>"
           }else{
             alert('There was a problem, please try again.');
           }
@@ -24,7 +23,9 @@
  <div class="w-section hero">
     <div class="w-container header_nav">
       <a class="w-inline-block" href="index.html"><img class="logo_image" src="design/img/logo.png" width="104">
-      </a><a class="button" href="/public/our-story">Our Story</a>
+      </a>
+      <a class="button home-page-button login-button" href="#/public/login">Login</a>
+      <a class="button home-page-button" href="/public/our-story">Our Story</a>
     </div>
     <div class="w-container hero_copy">
       <h1>Accomplish Goals<br>Despite Multiple Sclerosis</h1>

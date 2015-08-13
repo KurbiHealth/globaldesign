@@ -16,14 +16,14 @@
 
 		<div id="profile">
 			<a href="#" class="pull-left"><img src="http://placehold.it/40x40" alt="Michelle Garnett" class="profile-small" /></a>
-			<p class="pull-left name"><a href="#">Michelle Garnett</a></p>
+			<p class="pull-left name"><a href="#">{{firstName}} {{lastName}}</a></p>
 			<a href="#" class="pull-left dropdown-toggle" type="button" id="mainMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-cog"></i></a>
 			<div class="clear"></div>
 			<ul class="dropdown-menu" aria-labelledby="mainMenu">
 				<li><a href="#">Settings</a></li>
 				<li><a href="#">Profile</a></li>
 			  <li role="separator" class="divider"></li>
-			  <li><a href="#">Logout</a></li>
+			  <li><a href="#" ng-click="logOut()">Logout</a></li>
 			</ul>
 		</div><!--END #profile-->
 		
@@ -39,7 +39,7 @@
 <div id="navbar" style="padding-left: 20px;">
 	<div class="dropdown">
 	  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-	    SELECT
+	    Menu
 	    <span class="caret"></span>
 	  </button>
 	  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -49,7 +49,7 @@
 	    <li><a ui-sref="private.care-plan">Care Plan</a></li>
 	    <li><a ui-sref="private.progress-chart">Progress Chart</a></li>
 	  </ul>
-	</div>
+	</div><!--END .dropdown-->
 </div><!--END #navbar-->
 <!-- /NAVBAR -->
 
