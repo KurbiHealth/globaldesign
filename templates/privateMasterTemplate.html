@@ -28,7 +28,7 @@
 		</div><!--END #profile-->
 		
 		<div id="mobile-nav-btn">
-			<i class="fa fa-bars"></i>
+			<a ng-click="openAside('right',true,'design/templates/mobileMenu.html'); cancel($event)"><i class="fa fa-bars"></i></a>
 		</div><!--END #mobile-nav-btn-->
 
 	</div><!--END .table-center-->
@@ -56,7 +56,7 @@
 <div id="page-container" class="container-fluid">
 	
 	<div id="mobile-post-box" class="row">
-		<div class="col-sm-8 col-sm-offset-2">
+		<div class="col-sm-12">
 			<!-- ADD POST FORM -->
 			<div add-post></div>
 			<!-- /ADD POST FORM -->

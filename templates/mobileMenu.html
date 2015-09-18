@@ -1,0 +1,44 @@
+<style>
+.ng-aside.horizontal .modal-dialog {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 200px;
+    z-index: 9999;
+}
+ul#mobile-menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ul#mobile-menu li a {
+	padding: 10px 20px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #333333;
+	border-top: 1px solid #cccccc;
+}
+ul#mobile-menu li a:hover {
+	text-decoration: none;
+}
+ul#mobile-menu li a:active {
+	text-decoration: none;
+	background: #cccccc;
+}
+ul#mobile-menu li:last-child a {
+	border-bottom: 1px solid #cccccc;
+}
+</style>
+
+<ul id="mobile-menu">
+  <li><a ui-sref="private.home">Home</a></li>
+  <li><a ui-sref="private.journal">Journal</a></li>
+  <li><a ui-sref="private.goals">Goals</a></li>
+  <li><a ui-sref="private.care-plan">Care Plan</a></li>
+  <li><a ui-sref="private.progress-chart">Progress Chart</a></li>
+</ul>
+
+<div style="padding: 10px 0; text-align: center;">
+	<button class="btn btn-warning" ng-click="cancel($event)">Close</button>
+</div>
