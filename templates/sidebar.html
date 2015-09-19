@@ -4,61 +4,49 @@
 		<div class="side-headline table">
 			<div class="table-center">
 				<h2 class="pull-left">Your Current Goals</h2>
-				<a class="pull-right" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-plus"></i></a>
+				<a class="pull-right"><i class="fa fa-plus"></i></a>
 			</div>
 			<div class="clear"></div>
 		</div><!--END .side-headline-->
-		
-		<div collapse="isCollapsed">
+			
+		<div class="sidebar-section table">
+			<div class="table-center text-center">
+				<a class="btn btn-default" role="button" ng-click="openAside('right',true,'modules/goal/templates/index.html')">Add New Goal</a>
+			</div><!--END .table-center-->
+			<div class="clear"></div>
+		</div><!--END .sidebar-section-->	
+
+		<div ng-repeat="goal in goalsList">
 			<div class="sidebar-section table">
-				<div class="table-center text-center">
-					<a class="btn btn-default" role="button" ng-click="openAside('right',true,'modules/goal/templates/index.html')">Add New Goal</a>
+				<div class="table-center">
+					<p class="pull-left">
+						<img src="http://placehold.it/30x30" alt="" class="profile-small" ng-click="console.log('hi')" />
+						{{goal.name}}
+					</p>
 				</div>
 				<div class="clear"></div>
 			</div>
-
-			<div ng-repeat="goal in goalsList">
-				<div class="sidebar-section table">
-					<div class="table-center">
-						<p class="pull-left">
-							<img src="http://placehold.it/30x30" alt="" class="profile-small" ng-click="console.log('hi')" />
-							{{goal.name}}
-						</p>
-					</div>
-					<div class="clear"></div>
-				</div>
-			</div>
-			
-		</div>
+		</div>	
 	</div><!--END #goal-block-->
 	
 	<div id="team-block">
 		<div class="side-headline table">
 			<div class="table-center">
 				<h2 class="pull-left">Your Care Team</h2>
-				<a class="pull-right" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-plus"></i></a>
+				<a class="pull-right"><i class="fa fa-plus"></i></a>
 			</div>
 			<div class="clear"></div>
 		</div><!--END .side-headline-->
 		
-		<div class="sidebar-section table">
-			<div class="table-center text-center">
-				<a class="btn btn-default" role="button">View Care Team</a>
-			</div>
-			<div class="clear"></div>
-		</div>
-		
-		<div collapse="isCollapsed">
-			<div ng-repeat="tm in careTeamList">
-				<div class="sidebar-section table">
-					<div class="table-center">
-						<a href="#" class="pull-left"><img src="http://placehold.it/30x30" alt="Member Name" class="profile-small" /></a>
-						<p class="pull-left"><strong>{{tm.firstName}} {{tm.lastName}}</strong><br />{{tm.role}}</p>
-					</div>
-					<div class="clear"></div>
-				</div>
-			</div>
-		</div>
+		<div ng-repeat="tm in careTeamList">
+			<div class="sidebar-section table">
+				<div class="table-center">
+					<a href="#" class="pull-left"><img src="http://placehold.it/30x30" alt="Member Name" class="profile-small" /></a>
+					<p class="pull-left"><strong>{{tm.firstName}} {{tm.lastName}}</strong><br />{{tm.role}}</p>
+				</div><!--END .table-center-->
+				<div class="clear"></div>
+			</div><!--END .sidebar-section-->
+		</div><!--END careteam loop-->
 		
 	</div><!--END #team-block-->
 	
@@ -76,18 +64,18 @@
 				<p class="pull-left"><i class="symptom-bullet red fa fa-circle"></i></p>
 				<p class="pull-left">Fatigue</p>
 				<p class="pull-right">Today</p>
-			</div>
+			</div><!--END .table-center-->
 			<div class="clear"></div>
-		</div>
+		</div><!--END .sidebar-section-->
 	
 		<div class="sidebar-section table">
 			<div class="table-center">
 				<p class="pull-left"><i class="symptom-bullet red fa fa-circle"></i></p>
 				<p class="pull-left">Leg Heaviness</p>
 				<p class="pull-right">Today</p>
-			</div>
+			</div><!--END .table-center-->
 			<div class="clear"></div>
-		</div>
+		</div><!--END .sidebar-section-->
 	
 	
 		<div class="sidebar-section table">
@@ -95,18 +83,18 @@
 				<p class="pull-left"><i class="symptom-bullet green fa fa-circle"></i></p>
 				<p class="pull-left">Wondering Thoughts</p>
 				<p class="pull-right">Today</p>
-			</div>
+			</div><!--END .table-center-->
 			<div class="clear"></div>
-		</div>
+		</div><!--END .sidebar-section-->
 	
 		<div class="sidebar-section table">
 			<div class="table-center">
 				<p class="pull-left"><i class="symptom-bullet yellow fa fa-circle"></i></p>
 				<p class="pull-left">Migraine</p>
 				<p class="pull-right">3/17</p>
-			</div>
+			</div><!--END .table-center-->
 			<div class="clear"></div>
-		</div>
+		</div><!--END .sidebar-section-->
 	</div><!--END #symptom-block-->
 	
 </div><!--END #sidebar-->

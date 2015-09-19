@@ -25,12 +25,12 @@ HEADER
 	width: 100%;
 	height: 70px;
 	background: #2F0862;
-	z-index: 999;
+	z-index: 1;
 }
 
 #logo {
-	/*text-align: center;*/
-	margin-left: -15px;
+	position: absolute;
+	left: 20px;
 }
 
 #logo a img {
@@ -38,7 +38,7 @@ HEADER
 }
 
 #header ul.dropdown-menu li a {
-	padding: 0 15px;
+	padding: 5px 15px;
 	font-size: 13px;
 	color: #333333;
 }
@@ -50,23 +50,42 @@ HEADER
 
 #header .dropdown-menu .divider {
 	margin: 5px 0;
+}
+
+#mobile-nav-btn {
+	display: none;
 }  
 
 #navbar {
 	position: relative;
 	top: 70px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding: 10px 0;
 	width: 100%;
 	background: #cccccc;
 }
 
+#main-nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#main-nav ul li a, #main-nav ul li a:visited {
+	display: block;
+	padding: 10px 0;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333333;
+}
+
+/*
 .dropdown{
 	margin-left: 63px;
 }
 .dropdown button{
 	min-width: 160px;
 }
+*/
 
 /*--------------------------------------------
 BODY
@@ -82,6 +101,11 @@ BODY
 /*--------------------------------------------
 POSTS
 ---------------------------------------------*/
+#mobile-post-box {
+	margin: 10px 0 20px 0;
+	display: none;
+}
+
 .post-item {
 	position: relative;
 	margin-top: 50px;
@@ -104,20 +128,28 @@ span.post-timestamp {
 
 .post-item a.post-person {
 	position: absolute;
-	top: 0;
-	left: -90px;
-	max-width: 70px;
+	top: 8px;
+	left: 8px;
+}
+
+.post-item a.post-person img {
+	margin-right: 5px;
+	float: left;
 }
 
 .post-item a.post-person h3 {
-	margin-top: 5px;
+	float: left;
 	font-size: 12px;
+	line-height: 40px;
 	color: #333333;
-	text-align: center;
 }
 
 .post-item a.post-person:hover {
 	text-decoration: none;
+}
+
+.post-content {
+	margin-top: 40px;
 }
 
 .post-content p {
@@ -191,29 +223,22 @@ SIDEBAR
 	cursor: pointer;
 }
 
-#profile a {
+#profile {
+	position: absolute;
+	right: 20px;
+}
+
+#profile p a {
+	padding-right: 8px;
 	font-size: 16px;
-	line-height: 40px;
+	line-height: 48px;
 	color: #ffffff;
 }
 
 #profile i.fa.fa-cog {
 	font-size: 24px;
-	line-height: 40px;
-}
-
-#main-nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-#main-nav ul li a, #main-nav ul li a:visited {
-	display: block;
-	padding: 10px 0;
-	font-size: 14px;
-	font-weight: bold;
-	color: #333333;
+	line-height: 44px;
+	color: #ffffff;
 }
 
 input.checkbox {
@@ -250,9 +275,9 @@ form.add-comment .form-group {
 	margin-bottom: 0;
 	max-width: 650px;
 }
-.form-group{
+/*.form-group{
 	margin-left: 50px;
-}
+}*/
 
 form#add-post input[type="text"] {
 	padding-right: 75px;
@@ -284,6 +309,10 @@ form#add-post button.btn.btn-default {
 	border-top-left-radius: 0px;
 	border-bottom-left-radius: 0px;
 	outline: none !important;
+}
+
+form.add-comment {
+	padding: 0 10px;
 }
 
 form.add-comment input[type="text"] {
@@ -396,13 +425,14 @@ JOURNAL PAGE
 ---------------------------------------------*/
 
 #journal-entry{
+	position: absolute;
+	top: -43px;
+	left: 100px;
 	display:block;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	border-radius: 4px;
-	padding: 5px;
-	margin-top: 5px;
-	margin-left: 17px;
-	background-color: white;
+	padding: 6px;
+	background-color: #ffffff;
 }
 #journal-entry #journal-entry-box{
 	width:100%;
