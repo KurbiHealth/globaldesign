@@ -49,6 +49,14 @@
   margin-left:5px;
 }
 
+.card.conditions-card .card-content{
+  padding:10px;
+}
+.card.conditions-card .card-content h4{
+  font-weight:normal;
+  margin:15px 0;
+}
+
 .card .card-title {
   color: #fff;
   font-size: 14px;
@@ -60,6 +68,7 @@
 	display: inline-block;
 	min-width:1px;
 	min-height:14px;
+  font-size: 18px;
 }
 
 .card .activator {
