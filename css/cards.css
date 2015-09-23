@@ -205,3 +205,9 @@
   background:#eae6e6;
   padding:5px 0;
 }
+
+.post-card{
+  background-color: transparent !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
