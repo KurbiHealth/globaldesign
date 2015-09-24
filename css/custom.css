@@ -24,7 +24,7 @@ HEADER
 	top: 0;
 	width: 100%;
 	height: 70px;
-	background: #2F0862;
+	background: #410E7E;
 	z-index: 1;
 }
 
@@ -98,6 +98,15 @@ BODY
 #content {
 	padding-bottom: 60px;
 }
+
+/*--------------------------------------------
+FLY-OUT
+---------------------------------------------*/
+
+.modal-sm{
+	width:530px !important;
+}
+
 /*--------------------------------------------
 POSTS
 ---------------------------------------------*/
@@ -209,7 +218,7 @@ SIDEBAR
 
 .side-headline {
 	padding: 10px 20px;
-	background: #2F0862;
+	background: #27014C;
 }
 
 .side-headline h2 {
