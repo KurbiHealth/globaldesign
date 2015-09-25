@@ -2,7 +2,7 @@
 MAIN
 ---------------------------------------------*/
 body {
-	background: #EEEDEB;
+	background: #F5F5F5;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -61,7 +61,7 @@ HEADER
 	top: 70px;
 	padding: 10px 0;
 	width: 100%;
-	background: #cccccc;
+	background: #EFEEEA;
 }
 
 #main-nav ul {
