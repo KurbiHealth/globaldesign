@@ -1,0 +1,115 @@
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Bitter:400,700,400italic","Droid Sans:400,700","Droid Serif:400,700"]
+      }
+    });
+    $( document ).ready(function() {
+      $('#email-form').on('submit','',function(e){
+        var data = $(this).serialize();
+        posting = $.post("http://api.gokurbi.com/v1/signup",data);
+        posting.complete(function(response){
+          if(posting.responseText == "true"){
+            alert('Your journal was saved.');
+          }else{
+            alert('There was a problem, please try again.');
+          }
+        });
+
+        return false;
+      });
+    });
+  </script>
+  <div class="w-nav navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
+    <div class="w-container">
+      <a class="w-nav-brand brand" href="index.html"><img width="130" src="/design/img/public/logo.png">
+      </a>
+      <nav class="w-nav-menu" role="navigation"><a class="w-nav-link navlink" ui-sref="public.ourstory">Our Story</a><a class="w-nav-link navlink" ui-sref="public.logInPage">Sign-in</a>
+      </nav>
+      <div class="w-nav-button menubutton">
+        <div class="w-icon-nav-menu"></div>
+      </div>
+    </div>
+  </div>
+  <div class="w-section section hero accesshero">
+    <div class="w-container herocontainer">
+      <h1 class="accessherotext accessheading">Let’s change your world, together</h1>
+      <h4>Find community, encouragement, and inspiration to do the things that matter to you.</h4>
+      <div class="w-form">
+        <form class="formboxparent" id="email-form" name="email-form" data-name="Email Form">
+          <input class="w-input signupbox" id="email" type="email" placeholder="enter email for free access" name="email" data-name="Email" required="required">
+          <input class="w-button signupbox button access" type="submit" value="Sign-up" data-wait="Please wait...">
+        </form>
+        <div class="w-form-done">
+          <p>Thank you! Your submission has been received!</p>
+        </div>
+        <div class="w-form-fail">
+          <p>Oops! Something went wrong while submitting the form</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-section section">
+    <h2 class="accessgoaltext">Here’s a few things we can help you with</h2>
+    <div class="w-container">
+      <div class="w-row">
+        <div class="w-col w-col-3">
+          <div class="goaltype"><img class="goal-type-image" width="83" src="/design/img/public/exercise.png">
+            <h3 class="accessgoaltypeheading">Exercise</h3>
+            <p class="goal-list-page">Walking, Yoga, Crossfit, Biking – no problem.&nbsp;Choose whatever you like to do or want to like doing.</p>
+          </div>
+        </div>
+        <div class="w-col w-col-3">
+          <div class="goaltype"><img class="goal-type-image" width="88" src="/design/img/public/travel.png">
+            <h3 class="accessgoaltypeheading">Travel</h3>
+            <p class="goal-list-page">Traveling to new places isn’t always an easy decision. Just let us know where and we’ll help you figure out how.</p>
+          </div>
+        </div>
+        <div class="w-col w-col-3">
+          <div class="goaltype"><img class="goal-type-image" width="88" src="/design/img/public/rest.png">
+            <h3 class="accessgoaltypeheading">Rest</h3>
+            <p class="goal-list-page">Some of us are the overachiever type. We’ll keep tabs and let you know when to simmer down</p>
+          </div>
+        </div>
+        <div class="w-col w-col-3">
+          <div class="goaltype"><img class="goal-type-image" width="88" src="/design/img/public/diet.png">
+            <h3 class="accessgoaltypeheading">Diet</h3>
+            <p class="goal-list-page">By far, this is the hardest goal to keep on track with. Who doesn’t like ice cream?!?! But let's keep the lb’s in check.</p>
+          </div>
+        </div>
+      </div>
+      <div class="w-row">
+        <div class="w-col w-col-3">
+          <div class="goaltype"><img class="goal-type-image" width="88" src="/design/img/public/make.png">
+            <h3 class="accessgoaltypeheading">Make</h3>
+            <p class="goal-list-page">Using those creative muscles is a wonderful outlet. We can’t be there to help but we can make sure things get done.&nbsp;</p>
+          </div>
+        </div>
+        <div class="w-col w-col-3">
+          <div class="goaltype"><img class="goal-type-image" width="88" src="/design/img/public/work.png">
+            <h3 class="accessgoaltypeheading">Work</h3>
+            <p class="goal-list-page">Sometimes our health will force career changes. Know that we’ll be there to help you get through it.</p>
+          </div>
+        </div>
+        <div class="w-col w-col-3">
+          <div class="goaltype"><img class="learnicon goal-type-image" width="98" src="/design/img/public/learn.png">
+            <h3 class="accessgoaltypeheading learn">Learn</h3>
+            <p class="goal-list-page">As long as you're alive it should be a goal to learn new things. Let’s make that commitment together.&nbsp;</p>
+          </div>
+        </div>
+        <div class="w-col w-col-3">
+          <div class="goaltype"><img class="goal-type-image" width="88" src="/design/img/public/find.png">
+            <h3 class="accessgoaltypeheading">Find</h3>
+            <p class="goal-list-page">You can't get things done when you don’t have the right tools. We’ll make sure you always have what you need when you need it.&nbsp;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="w-container">
+      <div>
+        <h6>© 2011-2015 Kurbi Health, Inc.</h6>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,1230 @@
+body {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+h1 {
+  display: block;
+  margin: 15px auto;
+  padding: 22px 0px;
+  font-family:'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  color: white;
+  font-size: 30px;
+  line-height: 65px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 1px;
+}
+h2 {
+  display: block;
+  margin: 0px 0px 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family:'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: right;
+}
+h3 {
+  margin-top: -205px;
+  margin-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-family:'Open Sans', sans-serif;
+  color: #390072;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+h4 {
+  display: block;
+  width: 809px;
+  margin: -8px auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-family:'Open Sans', sans-serif;
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 1px;
+}
+h5 {
+  width: 70%;
+  margin: 28px 64px 27px;
+  padding-right: 0px;
+  padding-left: 0px;
+  font-family:'Open Sans', sans-serif;
+  color: white;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  text-align: center;
+}
+h6 {
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  padding-right: 337px;
+  padding-left: 337px;
+  font-family:'Open Sans', sans-serif;
+  color: #0e0c0c;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+p {
+  display: block;
+  width: 80%;
+  margin: 41px auto 0px;
+  padding-right: 32px;
+  padding-left: 32px;
+  font-family:'Open Sans', sans-serif;
+  color: #786b6b;
+  line-height: 25px;
+  text-align: center;
+}
+a {
+  color: #00e;
+}
+.button {
+  display: inline-block;
+  margin: 12px 390px;
+  padding: 4px 11px 4px 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.button.access {
+  display: block;
+  width: auto;
+  height: 40px;
+  margin: -60px 286px -59px 289px;
+  padding: 7px 20px 10px 19px;
+  float: right;
+  border-radius: 3px;
+  background-image: -webkit-linear-gradient(#f90, #f69400);
+  background-image: linear-gradient(#f90, #f69400);
+  font-family:'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.button.access.accesspage {
+  margin-right: 400px;
+  margin-left: 400px;
+  float: right;
+}
+.button.access.home {
+  margin: 43px 0px 75px;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-left: 40px;
+  float: left;
+  font-weight: 300;
+}
+.button.access.home.story {
+  display: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.button.access.storybutton {
+  display: none;
+}
+.button.goalpreview {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 10px 240px 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+  background-image: -webkit-linear-gradient(#f90, #f69400);
+  background-image: linear-gradient(#f90, #f69400);
+  font-family:'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.button.goalpreview.storysupportsection {
+  margin: 16px 311px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  font-family:'Open Sans', sans-serif;
+  font-weight: 300;
+}
+.brand {
+  margin: 23px 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.navlink {
+  height: auto;
+  margin: 25px 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  font-family:'Open Sans', sans-serif;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.navlink:hover {
+  border-color: white;
+  color: white;
+  font-weight: 400;
+}
+.navlink:active {
+  color: white;
+}
+.navlink.w--current {
+  border-color: white;
+  color: white;
+}
+.navbar {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: transparent;
+}
+.section {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 49px;
+  padding-bottom: 0px;
+  background-color: whitesmoke;
+}
+.section.hero {
+  display: block;
+  height: auto;
+  margin: -95px auto;
+  padding-top: 101px;
+  padding-bottom: 101px;
+  background-image: url('/design/img/public/herobackgroung.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.section.hero.accesshero {
+  margin-top: -100px;
+  margin-bottom: -100px;
+  background-image: url('/design/img/public/accessbackground.png');
+  background-position: 50% -107px;
+  background-size: auto;
+}
+.section.hero.accesshero.story {
+  margin-bottom: -95px;
+  padding-top: 86px;
+  padding-bottom: 86px;
+  background-image: url('/design/img/public/storybackground.png');
+  background-position: 50% -355px;
+}
+.section.hero.home {
+  background-image: -webkit-linear-gradient(263deg, rgba(55, 0, 113, 0.70) 46%, rgba(0, 179, 158, 0.70) 96%), url('/design/img/public/backgroundimage.png');
+  background-image: linear-gradient(187deg, rgba(55, 0, 113, 0.70) 46%, rgba(0, 179, 158, 0.70) 96%), url('/design/img/public/backgroundimage.png');
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+.section.hero.home.story {
+  margin-top: -101px;
+  margin-bottom: -101px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url('/design/img/public/storybackground.png');
+  background-position: 0% 60%;
+  background-size: auto;
+}
+.section.about {
+  margin-top: 19px;
+  margin-bottom: 45px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: white;
+}
+.section.path {
+  border-bottom: 1px solid #ddd;
+  background-color: #fbfbfb;
+}
+.footer {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #ddd;
+  background-color: white;
+}
+.herocontainer {
+  display: block;
+  margin: -73px auto -69px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.herocontainer.home {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding-top: 53px;
+  padding-bottom: 53px;
+}
+.supportcontainer {
+  display: block;
+  margin: -20px auto 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.aboutsub {
+  display: block;
+  width: 40%;
+  margin: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  float: right;
+  color: black;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+}
+.aboutsub.story {
+  width: 50%;
+  margin: 6px 334px;
+  padding: 22px 0px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 300;
+  text-align: left;
+}
+.aboutsub.story.body1 {
+  display: block;
+  width: 53%;
+  margin-right: auto;
+  margin-left: auto;
+  font-family:'Open Sans', sans-serif;
+  color: #786b6b;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.aboutsub.story.body2 {
+  display: block;
+  width: 53%;
+  margin: 8px auto;
+  font-family:'Open Sans', sans-serif;
+  color: #786b6b;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.aboutsub.story.body3 {
+  display: block;
+  width: 53%;
+  margin-right: auto;
+  margin-left: auto;
+  color: #786b6b;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.aboutcontainer {
+  display: block;
+  margin: 25px auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.image {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.sidebar {
+  width: 35%;
+  height: 100%;
+  margin-top: -95px;
+  margin-bottom: -95px;
+  padding-top: 100%;
+  padding-bottom: 100%;
+  float: right;
+  background-color: black;
+}
+.form {
+  width: 70%;
+  margin: 39px 55px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.formbutton {
+  margin-right: 53px;
+  margin-left: 53px;
+  padding-right: 67px;
+  padding-left: 67px;
+  background-color: #f90;
+  color: white;
+}
+.sidebarcontainer {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.accessherotext {
+  margin-top: 60px;
+  margin-bottom: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+.accessherotext.accessheading {
+  margin-top: 45px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.signupbox {
+  display: block;
+  width: 30%;
+  height: 40px;
+  margin: 20px 263px 20px 258px;
+  padding: 0px 0px 0px 37px;
+  float: left;
+}
+.signupbox.storybox {
+  display: none;
+}
+.accessgoaltext {
+  display: block;
+  width: 40%;
+  margin: 0px 340px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  float: none;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.goaltype {
+  width: 100%;
+  margin: 51px 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.accessgoaltypeheading {
+  display: block;
+  margin: 27px auto 18px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.accessgoaltypeheading.learn {
+  margin-top: 28px;
+}
+.homesupporttext {
+  width: 298px;
+  margin: 0px;
+}
+.formboxparent {
+  margin-top: 17px;
+  margin-bottom: 34px;
+}
+.storysupporttext {
+  display: none;
+}
+.storyheadings {
+  margin: 20px auto 0px;
+  padding-right: 132px;
+  padding-left: 137px;
+  float: left;
+  font-family:'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.storyheadings.heading2 {
+  margin: -248px auto 0px;
+  padding-right: 135px;
+  padding-left: 133px;
+}
+.storyheadings.heading2.storysection {
+  margin-top: 20px;
+}
+.storyheadings.heading3 {
+  margin: -246px 0px 0px;
+  padding-left: 132px;
+}
+.storyheadings.heading3.storysection {
+  margin-top: 20px;
+}
+.homeheadingsupport {
+  width: 80%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: left;
+}
+.accessheroheading {
+  height: 121px;
+  margin-top: 91px;
+  margin-bottom: 2px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 52px;
+  line-height: 59px;
+  text-align: left;
+}
+.livechart-screenshot {
+  float: right;
+}
+.livechart-screenshot.mobile {
+  margin-top: -210px;
+}
+.livechart-text {
+  width: 35%;
+  margin: 0px;
+  padding-right: 0px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  text-align: left;
+}
+.livechart-heading {
+  width: 35%;
+  margin: 128px 0px 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  color: #3f007f;
+  text-align: left;
+}
+.livechart-heading.home {
+  margin-top: 0px;
+  padding-top: 132px;
+}
+.path-heading {
+  width: 40%;
+  margin-top: 109px;
+  margin-bottom: 15px;
+  padding: 0px 0px 0px 10px;
+  float: right;
+  color: #3f007f;
+  text-align: left;
+}
+.path-collage {
+  margin-top: 17px;
+  margin-bottom: 75px;
+  float: left;
+}
+.goal-list-page {
+  display: block;
+  width: 90%;
+  margin-top: 37px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0px;
+  padding-left: 0px;
+  font-size: 14px;
+  text-align: center;
+}
+.goal-type-image {
+  margin-left: 69px;
+}
+@media (max-width: 991px) {
+  h2 {
+    margin-top: -12px;
+  }
+  h3 {
+    margin-top: -176px;
+    font-size: 18px;
+  }
+  h4 {
+    width: 70%;
+  }
+  h6 {
+    display: block;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 242px;
+    padding-left: 242px;
+    font-family:'Open Sans', sans-serif;
+    color: black;
+    font-weight: 400;
+  }
+  p {
+    width: 50%;
+  }
+  .button.access {
+    display: block;
+    width: 50%;
+    margin: 4px auto 0px;
+    padding-right: 30px;
+    padding-left: 30px;
+    float: none;
+  }
+  .button.access.home {
+    display: block;
+    margin: 30px auto 76px 20px;
+  }
+  .button.goalpreview {
+    margin-top: 16px;
+    margin-right: 200px;
+    margin-left: 200px;
+    padding-left: 15px;
+  }
+  .button.goalpreview.storysupportsection {
+    width: 54%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .herocontainer.home {
+    margin-top: 0px;
+  }
+  .supportcontainer {
+    margin-top: -40px;
+  }
+  .aboutsub {
+    padding-left: 0px;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: 0px;
+  }
+  .aboutsub.story.body1 {
+    display: block;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .aboutsub.story.body2 {
+    display: block;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .aboutsub.story.body3 {
+    display: block;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .accessherotext {
+    font-size: 30px;
+  }
+  .signupbox {
+    display: block;
+    width: 50%;
+    margin-right: auto;
+    margin-bottom: -5px;
+    margin-left: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    float: none;
+    text-align: center;
+  }
+  .accessgoaltext {
+    display: block;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .homesupporttext {
+    margin-top: -12px;
+    margin-right: -37px;
+    margin-left: -37px;
+    padding-right: 41px;
+    padding-left: 46px;
+    font-size: 12px;
+  }
+  .storyheadings {
+    display: block;
+    width: 30%;
+    margin-top: 14px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 36px;
+    padding-left: 36px;
+  }
+  .storyheadings.heading2 {
+    width: 30%;
+    margin-top: 28px;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+  .storyheadings.heading2.storysection {
+    margin-top: 273px;
+  }
+  .storyheadings.heading3 {
+    width: 30%;
+    margin-top: 15px;
+    padding-right: 28px;
+    padding-left: 28px;
+  }
+  .storyheadings.heading3.storysection {
+    margin-top: 278px;
+  }
+  .homeheadingsupport {
+    display: block;
+    width: 90%;
+    margin-top: -20px;
+    margin-right: auto;
+    margin-left: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+    font-size: 14px;
+  }
+  .accessheroheading {
+    display: block;
+    width: 90%;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: 21px;
+    font-size: 37px;
+    line-height: 46px;
+  }
+  .menubutton {
+    color: white;
+  }
+  .livechart-screenshot {
+    width: 55%;
+  }
+  .livechart-text {
+    width: 40%;
+    padding-left: 20px;
+    color: black;
+    letter-spacing: 0px;
+  }
+  .livechart-heading {
+    width: 40%;
+    margin-top: 40px;
+    padding-left: 20px;
+    font-size: 25px;
+  }
+  .path-heading {
+    width: 40%;
+    margin-top: 64px;
+    padding-left: 0px;
+    font-size: 25px;
+  }
+  .path-collage {
+    width: 55%;
+    margin-top: 29px;
+  }
+  .goal-type-image {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (max-width: 767px) {
+  h3 {
+    display: block;
+    margin-top: -209px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  h4 {
+    width: 70%;
+    font-size: 14px;
+  }
+  h6 {
+    display: block;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 170px;
+    padding-left: 170px;
+    font-family:'Open Sans', sans-serif;
+    color: black;
+    font-weight: 400;
+  }
+  p {
+    display: block;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .button.access {
+    display: block;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .button.access.home {
+    width: 30%;
+    margin-top: 19px;
+    margin-right: auto;
+    margin-left: 26px;
+    padding-right: 9px;
+    padding-left: 9px;
+  }
+  .button.goalpreview {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .button.goalpreview.storysupportsection {
+    width: 80%;
+    margin-right: 68px;
+    margin-left: 68px;
+  }
+  .brand {
+    width: 20%;
+  }
+  .aboutsub {
+    display: block;
+    width: 95%;
+    margin: 0px auto 30px;
+    padding-left: 28px;
+    float: none;
+  }
+  .aboutsub.story.body1 {
+    width: 85%;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .aboutsub.story.body2 {
+    width: 84%;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .aboutsub.story.body3 {
+    width: 82%;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .image {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .image.image2 {
+    margin-top: 80px;
+  }
+  .accessherotext {
+    width: 80%;
+    margin-right: 67px;
+    margin-left: 67px;
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .accessherotext.accessheading {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 20px;
+    line-height: 42px;
+    text-align: center;
+  }
+  .signupbox {
+    display: block;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 59px;
+    padding-left: 59px;
+  }
+  .accessgoaltext {
+    width: 100%;
+  }
+  .goaltype {
+    display: block;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .accessgoaltypeheading {
+    display: block;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .accessgoaltypeheading.learn {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .homesupporttext {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 16px;
+  }
+  .storyheadings {
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+    padding-right: 190px;
+    padding-left: 190px;
+    float: none;
+  }
+  .storyheadings.heading2 {
+    margin-top: 49px;
+    margin-right: 32px;
+    margin-left: 32px;
+  }
+  .storyheadings.heading2.storysection {
+    display: block;
+    margin-top: 42px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .storyheadings.heading3 {
+    margin-top: 33px;
+    margin-right: 33px;
+    margin-left: 33px;
+  }
+  .storyheadings.heading3.storysection {
+    display: block;
+    margin-top: 33px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 17px;
+    padding-left: 17px;
+  }
+  .homeheadingsupport {
+    display: block;
+    width: 80%;
+    margin-top: 9px;
+    margin-right: auto;
+    margin-left: 28px;
+    font-size: 12px;
+  }
+  .accessheroheading {
+    display: block;
+    height: auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 28px;
+    line-height: 39px;
+  }
+  .learnicon {
+    display: block;
+    margin-right: -6px;
+    margin-left: -6px;
+  }
+  .learnicon.goal-type-image {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .livechart-screenshot.mobile {
+    width: 100%;
+    margin-top: 0px;
+    float: none;
+  }
+  .livechart-text {
+    width: 95%;
+    margin-top: 41px;
+    margin-bottom: 30px;
+    padding-left: 28px;
+  }
+  .livechart-heading.home {
+    display: block;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 0px;
+    padding-left: 28px;
+  }
+  .path-heading.mobile {
+    width: 95%;
+    margin-top: 0px;
+    padding-left: 28px;
+    float: none;
+  }
+  .path-collage {
+    display: block;
+    width: 100%;
+    margin: 22px auto 44px;
+    float: none;
+  }
+}
+@media (max-width: 479px) {
+  h2 {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 20px;
+  }
+  h3 {
+    display: block;
+    margin-top: -160px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 20px;
+  }
+  h4 {
+    margin-top: 2px;
+    font-size: 12px;
+  }
+  h6 {
+    display: block;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 58px;
+    padding-left: 58px;
+    font-family:'Open Sans', sans-serif;
+    color: black;
+    font-weight: 400;
+  }
+  p {
+    display: block;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .button.access {
+    display: block;
+    width: 90%;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .button.access.home {
+    display: block;
+    width: 70%;
+    margin: 20px 48px 15px;
+    padding-left: 40px;
+  }
+  .button.goalpreview {
+    width: 81%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 39px;
+    padding-left: 39px;
+    font-size: 13px;
+  }
+  .button.goalpreview.storysupportsection {
+    width: 80%;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-right: 31px;
+    padding-left: 31px;
+    font-size: 13px;
+  }
+  .brand {
+    width: 30%;
+  }
+  .section {
+    margin-top: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .section.hero.home {
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+  }
+  .aboutsub {
+    display: block;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+    float: none;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .aboutsub.story.body1 {
+    width: 80%;
+    margin-top: 0px;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: left;
+  }
+  .aboutsub.story.body2 {
+    width: 80%;
+    margin-top: 0px;
+    text-align: left;
+  }
+  .aboutsub.story.body3 {
+    width: 80%;
+    margin-top: 0px;
+    text-align: left;
+  }
+  .image {
+    display: block;
+    margin: -2px auto;
+  }
+  .image.image2 {
+    margin-top: 85px;
+  }
+  .image.image3 {
+    margin-top: 65px;
+  }
+  .accessherotext {
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .accessherotext.accessheading {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 400;
+  }
+  .signupbox {
+    display: block;
+    width: 90%;
+    margin: 6px auto 0px;
+  }
+  .accessgoaltext {
+    width: 80%;
+    font-size: 20px;
+  }
+  .goaltype {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .accessgoaltypeheading {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .accessgoaltypeheading.learn {
+    margin-right: 7px;
+    margin-left: 7px;
+  }
+  .homesupporttext {
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 21px;
+    padding-left: 21px;
+    font-size: 14px;
+  }
+  .storyheadings {
+    width: 40%;
+    margin-right: 0px;
+    margin-left: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .storyheadings.heading2 {
+    width: 94%;
+    margin-top: 40px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .storyheadings.heading2.storysection {
+    width: 40%;
+    margin-top: 28px;
+    margin-right: 0px;
+    margin-left: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .storyheadings.heading3 {
+    width: 93%;
+    margin-top: 13px;
+    margin-right: 11px;
+    margin-left: 11px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .storyheadings.heading3.storysection {
+    width: 40%;
+    margin-right: 0px;
+    margin-left: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+    float: none;
+  }
+  .homeheadingsupport {
+    width: 80%;
+    margin-top: 11px;
+    margin-right: 34px;
+    margin-left: 34px;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .accessheroheading {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 30px;
+    line-height: 41px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .menubutton {
+    color: white;
+  }
+  .livechart-screenshot {
+    display: block;
+    width: 90%;
+    margin: 9px auto 25px;
+    float: none;
+  }
+  .livechart-screenshot.mobile {
+    margin-top: 0px;
+  }
+  .livechart-text {
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+    padding-left: 0px;
+    font-size: 13px;
+    text-align: center;
+  }
+  .livechart-heading {
+    display: block;
+    width: 90%;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+  .livechart-heading.home {
+    padding-top: 0px;
+  }
+  .path-heading {
+    display: block;
+    width: 90%;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    float: none;
+    text-align: center;
+  }
+  .path-collage {
+    display: block;
+    width: 90%;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-left: auto;
+    float: none;
+  }
+}
