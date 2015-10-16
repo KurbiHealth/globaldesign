@@ -1,42 +1,52 @@
-  <div class="w-section hero_background">
-    <div class="w-container"><a class="button" href="#">Our Story</a>
-      <a class="w-inline-block" href="index.html"><img class="logo_image" src="images/logo.png" width="138">
+  <div class="w-nav navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
+    <div class="w-container">
+      <a class="w-nav-brand brand" ui-sref="public.home"><img width="130" src="/design/img/public/logo.png">
       </a>
-    </div>
-    <div class="w-container hero_text_container">
-      <h1>Personally Affected.<br>Passionately Involved.</h1>
-      <p>We started working on Kurbi because our loved ones needed us to.</p>
-    </div>
-  </div>
-  <div class="w-section body_copy_section">
-    <div class="w-container body_copy_container">
-      <div class="body_heading">Every person you know is somehow connected to and affected by at least one chronic disease.</div>
-      <div class="body_copy">You may not have noticed it but chronic disease has bullied it’s way into your life. Be it a friend, a loved one, a neighbor, or a coworker; someone you know is battling the affects of chronic disease. Back in 2012 Kurbi co-founder &amp; CEO, Wes Garnett, realized how staggering those statistics are. That knowledge changed the course of his life.
-        <br>
-        <br>Wes has 5 family members living with the influence of Multiple Sclerosis. His mom was the first to be diagnoised and for years he carried the guilt of feeling like he wasn’t doing enough to support her. What he was suprised to learn was that nearly every family he met with was struggling with similar problems:</div>
-      <div class="copy_callout_div">
-        <div class="copy_callout_text"><strong>Person living with chronic disease:</strong>&nbsp;
-          <br>What can I do with my life now? How do I get back to normal? What’s safe for me to do?
-          <br>
-          <br><strong>Loved one:&nbsp;</strong>
-          <br><strong>I</strong> have no clue what I should be doing to help this person get back to a normal life but I’m pretty sure whatever it is I’m not doing <strong>it</strong>.</div>
+      <nav class="w-nav-menu" role="navigation"><a class="w-nav-link navlink" ui-sref="public.ourstory">Our Story</a><a class="w-nav-link navlink" ui-sref="public.logInPage">Sign-in</a>
+      </nav>
+      <div class="w-nav-button menubutton">
+        <div class="w-icon-nav-menu"></div>
       </div>
-      <div class="body_copy_3">After doing some research Wes realized that millions of people all over the world were struggling to find answers to the same questions. In 2012 he joined forces with longtime business partner and front-end developer, Steve Reottger; developer/analyst, Andrew Robbins; and architect/developer, Matt Eckman to find a solution.
-        <br>
-        <br>Today, after a lot of trial and error, Kurbi is helping people to find safe and attainable ways to stay productive despite the affects of chronic disease, track their symptoms, get treatment reminders throughout the day, and access instant, on the fly support from their loved ones, freinds, and care providers.&nbsp;
-        <br>
-        <br>We believe it’s the intersection of collaborative goal achievement, health tracking, treatment adherence, and increased patient-doctor communication that sets Kurbi apart from other companies in the health and wellness space. We’re truly honored to be at the leading edge of technology-based chronic disease self-management.</div>
     </div>
   </div>
-  <div class="w-container investor_relations_button_container"><a class="button investor_relations" href="mailto:wes@gokurbi.com?subject=Let's%20Talk%20Details">Investor Inquiries</a>
-  </div>
-  <div class="w-section footer_section">
-    <div class="w-row">
-      <div class="w-col w-col-6 footer1">
-        <div class="footer1_text">Follow Our Progress:</div><img class="icon" src="images/twitter.png" width="20"><img class="icon2" src="images/facebook.png" width="10">
+  <div class="w-section section hero accesshero story">
+    <div class="w-container herocontainer">
+      <h1 class="accessherotext">Personally affected. Passionately involved.</h1><a class="button goalpreview storysupportsection" ui-sref="public.freeaccess">See how we're trying to help</a>
+      <h4 class="storysupporttext">Find community, encouragement, and inspiration to do the things that matter to you.</h4>
+      <div class="w-form">
+        <form class="w-clearfix formboxparent" id="email-form" name="email-form" data-name="Email Form">
+          <input class="w-input signupbox storybox" id="email-2" type="email" placeholder="enter email for free access" name="email-2" data-name="Email 2" required="required">
+          <input class="w-button signupbox button access storybutton" type="submit" value="Sign-up" data-wait="Please wait...">
+        </form>
+        <div class="w-form-done">
+          <p>Thank you! Your submission has been received!</p>
+        </div>
+        <div class="w-form-fail">
+          <p>Oops! Something went wrong while submitting the form</p>
+        </div>
       </div>
-      <div class="w-col w-col-6 footer2">
-        <div class="copyright">© 2011-2015 Kurbi Health, Inc.</div>
+    </div>
+  </div>
+  <div class="w-section section about">
+    <div class="w-container aboutcontainer">
+      <div>
+        <h2 class="storyheadings">Who Are We</h2>
+        <h4 class="aboutsub story body1">We’re a team 4 with close connections to several chronic conditions.&nbsp;We’ve been working on Kurbi since 2013.<br><br>Wes Garnett – Co-Founder / UX Designer<br>Andrew Robbins – Co-Founder / Front-end Developer<br>Steve Roettger – Co-Founder / Front-end Developer<br>Matt Eckman – Co-Founder / Back-end Developer</h4>
+      </div>
+      <div>
+        <h2 class="storyheadings heading3 storysection">The Problem</h2>
+        <h4 class="aboutsub story body3">Patient portals do a really bad job of helping people to see how their health data affects their day-to-day life. Consequently, people trying to improve their health don’t have the tools and knowledge they need to make safe, long lasting changes. And with a limited amount of willpower it’s tough to just “keep going”. We believe these are big problems so we're doing something about it.&nbsp;</h4>
+      </div>
+      <div>
+        <h2 class="storyheadings heading2 storysection">What We Do</h2>
+        <h4 class="aboutsub story body2">Kurbi is a web and mobile app that helps people living with health related limitations to do things they care about, safely. <br><br>How it works is simple ::  based on what we know about our user we show them how their health will affect their ability to accomplish their goals.&nbsp;</h4>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="w-container">
+      <div>
+        <h6>© 2011-2015 Kurbi Health, Inc.</h6>
       </div>
     </div>
   </div>
