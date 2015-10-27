@@ -20,6 +20,9 @@
 HEADER
 ---------------------------------------------*/
 #profile { display: none; }
+body.wrapper-open {
+	margin-right: 200px;
+}
 #mobile-nav-btn { display: block; }
 #mobile-nav-btn i.fa.fa-bars {
 	position: absolute;
@@ -28,6 +31,10 @@ HEADER
 	font-size: 32px;
 	color: #ffffff;
 	cursor: pointer;
+}
+
+.modal-sm {
+	width:200px !important;
 }
 
 #navbar { display: none; }

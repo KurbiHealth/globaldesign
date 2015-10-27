@@ -32,13 +32,8 @@ ul#mobile-menu li:last-child a {
 </style>
 
 <ul id="mobile-menu">
-  <li><a ui-sref="private.home">Home</a></li>
-  <li><a ui-sref="private.journal">Journal</a></li>
-  <li><a ui-sref="private.goals">Goals</a></li>
-  <li><a ui-sref="private.care-plan">Care Plan</a></li>
-  <li><a ui-sref="private.progress-chart">Progress Chart</a></li>
+  <li><a ui-sref="private.home" ng-click="cancel($event);">Home</a></li>
+  <li><a ui-sref="private.journal" ng-click="cancel($event);">Journal</a></li>
+  <li><a ui-sref="private.goals" ng-click="cancel($event);">Goals</a></li>
+  <li><a ui-sref="private.live-chart-list" ng-click="cancel($event);">Live Chart</a></li>
 </ul>
-
-<div style="padding: 10px 0; text-align: center;">
-	<button class="btn btn-warning" ng-click="cancel($event)">Close</button>
-</div>
