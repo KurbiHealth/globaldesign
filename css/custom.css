@@ -520,10 +520,6 @@ GOAL PAGE
 	min-width: 255px;
 	background: #ffffff;
 	border: 1px solid #cccccc;
-	cursor: pointer;
-}
-.goal-card:hover {
-	opacity: 0.5;	
 }
 .goal-card a, .goal-card a:visited {
 	color: #333333;
@@ -541,6 +537,10 @@ GOAL PAGE
 }
 .goal-card-body {
 	position: relative;
+}
+.goal-card-body:hover {
+	opacity: 0.5;
+	cursor: pointer;
 }
 .goal-card-body img {
 	max-width: 253px;
@@ -617,15 +617,32 @@ img.path-hero-icon {
 	clear:both;
 	font-size: 16px;
 }
-.path-details-container input{
+.path-details-container input {
 	padding-left: 5px;
 	margin-bottom: 5px;
 	width:100%;
 	height: 40px;
 	font-size: 14px;
 	color: #333333;
+	border: 1px solid #cccccc;
 }
-.path-details-form, .path-details-overview, .path-details-team, .path-details-location, .path-details-frequency, .path-details-toolkit{
+.path-details-container textarea {
+	padding-left: 5px;
+	margin-bottom: 5px;
+	width:100%;
+	max-width:100%;
+	height: 60px;
+	font-size: 14px;
+	color: #333333;
+	border: 1px solid #cccccc;
+}
+.path-details-form,
+.path-details-overview,
+.path-details-team,
+.path-details-location,
+.path-details-frequency,
+.path-details-toolkit,
+.path-details-submit {
 	margin-top:15px;
 	padding: 0 20px;
 }
@@ -648,7 +665,6 @@ img.path-hero-icon {
 	border: 1px solid #51079B;
 	color:#51079B;
 }
-
 .path-details-team p{
 	margin:0;
 	padding:0;

@@ -29,7 +29,7 @@ HEADER
 	color: #ffffff;
 	cursor: pointer;
 }
-/*body.snapjs-right #drawer { display: block; right: 0; }*/
+
 #navbar { display: none; }
 #post-box { display: none; }
 #logo { top: 15px; }
