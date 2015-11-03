@@ -19,8 +19,13 @@
 		<div ng-repeat="goal in goalsList">
 			<div class="sidebar-section table">
 				<div class="table-center">
-					<p class="pull-left">
-						<img src="http://placehold.it/30x30" alt="" class="profile-small" ng-click="console.log('hi')" />
+					<div ng-if="goal.iconPath == ''">
+						<img src="http://placehold.it/40x40" alt="{{card.author}}" class="profile-small pull-left img-responsive" />
+					</div>
+					<div ng-if="goal.iconPath != ''">
+						<img src="/design/img/{{goal.iconPath}}" alt="" class="profile-small pull-left img-responsive" ng-click="console.log('hi')" />
+					</div>
+					<p class="pull-right col-md-8">
 						{{goal.name}}
 					</p>
 				</div>
@@ -41,7 +46,14 @@
 		<div ng-repeat="tm in careTeamList">
 			<div class="sidebar-section table">
 				<div class="table-center">
-					<a href="#" class="pull-left"><img src="http://placehold.it/30x30" alt="Member Name" class="profile-small" /></a>
+					<a href="#" class="pull-left">
+						<div ng-if="tm.avatar == ''">
+							<img src="http://placehold.it/40x40" alt="{{tm.firstName}} {{tm.lastName}}" height="40" width="40" class="profile-small pull-left" />
+						</div>
+						<div ng-if="tm.avatar != ''">
+							<img src="/design/user_images/{{tm.avatar}}" alt="Member Name" class="profile-small" />
+						</div>
+					</a>
 					<p class="pull-left"><strong>{{tm.firstName}} {{tm.lastName}}</strong><br />{{tm.role}}</p>
 				</div><!--END .table-center-->
 				<div class="clear"></div>

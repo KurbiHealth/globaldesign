@@ -15,7 +15,14 @@
 		
 
 		<div id="profile">
-			<a href="#" class="pull-left"><img src="http://placehold.it/40x40" alt="Michelle Garnett" class="profile-small" /></a>
+			<a href="#" class="pull-left">
+				<div ng-if="goal.iconPath == ''">
+					<img src="http://placehold.it/40x40" alt="{{card.author}}" height="40" width="40" class="profile-small" />
+				</div>
+				<div ng-if="goal.iconPath != ''">
+					<img src="{{avatarImage}}" width="40" height="40" alt="{{firstName}} {{lastName}}" class="profile-small" />
+				</div>
+			</a>
 			<p class="pull-left name"><a href="#">{{firstName}} {{lastName}}</a></p>
 			<a href="#" class="pull-left dropdown-toggle" type="button" id="mainMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-cog"></i></a>
 			<div class="clear"></div>
