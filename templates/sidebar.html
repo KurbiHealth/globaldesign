@@ -8,10 +8,10 @@
 			</div>
 			<div class="clear"></div>
 		</div><!--END .side-headline-->
-			
+
 		<div class="sidebar-section table">
 			<div class="table-center text-center">
-				<a class="btn btn-default" role="button" ng-click="openAside('right',true,'modules/goal/templates/add-path.html')">Add New Goal</a>
+				<a class="btn btn-default" role="button" ng-click="openAside('right',true,'modules/goal/templates/activities.html')">Add New Goal</a>
 			</div><!--END .table-center-->
 			<div class="clear"></div>
 		</div><!--END .sidebar-section-->	
@@ -47,10 +47,10 @@
 			<div class="sidebar-section table">
 				<div class="table-center">
 					<a href="#" class="pull-left">
-						<div ng-if="tm.avatar == ''">
+						<div ng-if="tm.avatar == '' || tm.avatar==undfined">
 							<img src="http://placehold.it/40x40" alt="{{tm.firstName}} {{tm.lastName}}" height="40" width="40" class="profile-small pull-left" />
 						</div>
-						<div ng-if="tm.avatar != ''">
+						<div ng-if="tm.avatar != '' && tm.avatar != undefined">
 							<img src="/design/user_images/{{tm.avatar}}" alt="Member Name" class="profile-small" />
 						</div>
 					</a>
