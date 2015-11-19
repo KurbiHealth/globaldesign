@@ -19,7 +19,9 @@
 /*--------------------------------------------
 HEADER
 ---------------------------------------------*/
-#profile { display: none; }
+#profile { position: absolute;
+top: 17px;
+right: 17px; }
 body.wrapper-open {
 	margin-right: 200px;
 }
@@ -37,9 +39,9 @@ body.wrapper-open {
 	width:200px !important;
 }
 
-#navbar { display: none; }
 #post-box { display: none; }
 #logo { top: 15px; }
 #mobile-post-box { display: block; }
+#journal-entry { top: -112px; }    
 
 }
