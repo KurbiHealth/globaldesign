@@ -1,6 +1,6 @@
 <div id="sidebar" class="col-md-2 hidden-sm hidden-xs">
 	
-	<div id="goal-block">
+	<div id="goal-block" ng-controller="GoalController">
 		<div class="side-headline table">
 			<div class="table-center">
 				<h2 class="pull-left">Your Current Goals</h2>
@@ -18,12 +18,12 @@
 
 		<div ng-repeat="goal in goalsList">
 			<div class="sidebar-section table">
-				<div class="table-center">
+				<div class="table-center" ng-click="loadGoalPath(goal.id)">
 					<div ng-if="goal.iconPath == ''">
 						<img src="http://placehold.it/40x40" alt="{{card.author}}" class="profile-small pull-left img-responsive" />
 					</div>
 					<div ng-if="goal.iconPath != ''">
-						<img src="/design/img/{{goal.iconPath}}" alt="" class="profile-small pull-left img-responsive" ng-click="console.log('hi')" />
+						<img src="/design/img/{{goal.iconPath}}" alt="" class="profile-small pull-left img-responsive" />
 					</div>
 					<p class="pull-right col-md-8">
 						{{goal.name}}
