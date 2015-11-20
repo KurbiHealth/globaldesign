@@ -6,7 +6,8 @@
 
 p.name { display: none; }
 .goal-card:nth-child(3n) { margin-right: 15px; }
-#mobile-goal-btn { position: absolute; top: -43px; left: 100px; }
+#mobile-goal-btn { position: absolute; top: 81px; left: 100px; }
+#journal-entry { top: -42px; left: 192px; }
 
 }
 
@@ -45,6 +46,6 @@ body.wrapper-open {
 #post-box { display: none; }
 #logo { top: 15px; }
 #mobile-post-box { display: block; }
-#journal-entry { top: -112px; }   
-#mobile-goal-btn { position: absolute; top: -113px; left: 100px; }
+#journal-entry { top: -112px; left: 192px; }
+
 }

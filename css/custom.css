@@ -438,7 +438,7 @@ JOURNAL PAGE
 	top: -43px;
 	left: 100px;
 	display:block;
-	/*border: 1px solid black;*/
+	border: 1px solid #cccccc;
 	border-radius: 4px;
 	padding: 6px;
 	background-color: #ffffff;
