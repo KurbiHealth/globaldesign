@@ -443,6 +443,9 @@ JOURNAL PAGE
 	padding: 6px;
 	background-color: #ffffff;
 }
+#journal-entry .md-create, #journal-entry .md-camera-alt, #journal-entry .md-healing {
+	cursor: pointer;
+}
 #journal-entry #journal-entry-box{
 	width:100%;
 	margin-bottom: 5px;
@@ -617,7 +620,7 @@ img.path-hero-icon {
 	clear:both;
 	font-size: 16px;
 }
-.path-details-container input {
+.path-details-container input, .path-input {
 	padding-left: 5px;
 	margin-bottom: 5px;
 	width:100%;
@@ -625,6 +628,9 @@ img.path-hero-icon {
 	font-size: 14px;
 	color: #333333;
 	border: 1px solid #cccccc;
+}
+.path-input {
+	line-height: 40px;
 }
 .path-details-container textarea {
 	padding-left: 5px;
