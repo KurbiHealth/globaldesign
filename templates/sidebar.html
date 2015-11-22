@@ -65,45 +65,17 @@
 	<div id="symptom-block">
 		<div class="side-headline table">
 			<div class="table-center">
-				<h2 class="pull-left">Your Symptom List</h2>
+				<h2 class="pull-left">Persistent Symptoms</h2>
 				<a href="#" class="pull-right"><i class="fa fa-plus"></i></a>
 			</div>
 			<div class="clear"></div>
 		</div><!--END .side-headline-->
-		
-		<div class="sidebar-section table">
+
+		<div class="sidebar-section table" ng-repeat="(tSyms, id) in topSymptoms">
 			<div class="table-center">
 				<p class="pull-left"><i class="symptom-bullet red fa fa-circle"></i></p>
-				<p class="pull-left">Fatigue</p>
+				<p class="pull-left">{{tSyms}}</p>
 				<p class="pull-right">Today</p>
-			</div><!--END .table-center-->
-			<div class="clear"></div>
-		</div><!--END .sidebar-section-->
-	
-		<div class="sidebar-section table">
-			<div class="table-center">
-				<p class="pull-left"><i class="symptom-bullet red fa fa-circle"></i></p>
-				<p class="pull-left">Leg Heaviness</p>
-				<p class="pull-right">Today</p>
-			</div><!--END .table-center-->
-			<div class="clear"></div>
-		</div><!--END .sidebar-section-->
-	
-	
-		<div class="sidebar-section table">
-			<div class="table-center">
-				<p class="pull-left"><i class="symptom-bullet green fa fa-circle"></i></p>
-				<p class="pull-left">Wondering Thoughts</p>
-				<p class="pull-right">Today</p>
-			</div><!--END .table-center-->
-			<div class="clear"></div>
-		</div><!--END .sidebar-section-->
-	
-		<div class="sidebar-section table">
-			<div class="table-center">
-				<p class="pull-left"><i class="symptom-bullet yellow fa fa-circle"></i></p>
-				<p class="pull-left">Migraine</p>
-				<p class="pull-right">3/17</p>
 			</div><!--END .table-center-->
 			<div class="clear"></div>
 		</div><!--END .sidebar-section-->
