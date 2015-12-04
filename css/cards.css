@@ -123,7 +123,13 @@
   display: block;
 }
 
-.display{
+/* FIX TOP MARGIN FOR COMMENT SUBMIT BUTTON */
+.card .card-reverse .input-group button{
+  margin: 0 0 0 -1px;
+  display: block;
+}
+
+.display {
   display:block;
 }
 
