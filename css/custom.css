@@ -438,13 +438,14 @@ JOURNAL PAGE
 
 #journal-entry{
 	position: fixed;
-	top: -43px;
+	top: 80px;
 	left: 100px;
 	display:block;
 	border: 1px solid #cccccc;
 	border-radius: 4px;
 	padding: 6px;
 	background-color: #ffffff;
+	z-index: 99;
 }
 #journal-entry .md-create, #journal-entry .md-camera-alt, #journal-entry .md-healing {
 	cursor: pointer;
