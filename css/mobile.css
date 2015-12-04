@@ -6,8 +6,8 @@
 
 p.name { display: none; }
 .goal-card:nth-child(3n) { margin-right: 15px; }
-#mobile-goal-btn { position: absolute; top: 81px; left: 100px; }
-#journal-entry { top: -42px; left: 192px; }
+#mobile-goal-btn { position: absolute; top: 81px; left: 100px; z-index: 99; }
+#journal-entry { top: -42px; left: 192px; z-index: 99; }
 
 }
 

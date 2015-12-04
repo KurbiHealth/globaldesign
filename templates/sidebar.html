@@ -16,7 +16,7 @@
 			<div class="clear"></div>
 		</div><!--END .sidebar-section-->	
 
-		<div ng-repeat="goal in goalsList">
+		<div ng-repeat="goal in goalsList | orderBy: '-created'">
 			<div class="sidebar-section table">
 				<div class="table-center" ng-click="loadGoalPath(goal.id)">
 					<div ng-if="goal.iconPath == ''">
