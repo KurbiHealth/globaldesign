@@ -437,7 +437,7 @@ JOURNAL PAGE
 ---------------------------------------------*/
 
 #journal-entry{
-	position: absolute;
+	position: fixed;
 	top: -43px;
 	left: 100px;
 	display:block;
