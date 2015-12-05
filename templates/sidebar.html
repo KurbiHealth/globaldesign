@@ -16,18 +16,46 @@
 			<div class="clear"></div>
 		</div><!--END .sidebar-section-->	
 
+		<div class="sidebar-section table">
+			<div class="table-center">
+				<a role="button" ng-click="openAside('right',true,'modules/goal/templates/goal-detail.html')" style="color: inherit;">
+					<table>
+						<tr>
+							<td>
+								<div>
+									<img src="/design/img/exercise.png" alt="" class="profile-small pull-left img-responsive" />
+								</div>		
+							</td>
+							<td>
+								<p>Build Endurance</p>
+							</td>
+						</tr>
+					</table>
+				</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
 		<div ng-repeat="goal in goalsList | orderBy: '-created'">
 			<div class="sidebar-section table">
 				<div class="table-center" ng-click="loadGoalPath(goal.id)">
-					<div ng-if="goal.iconPath == ''">
-						<img src="http://placehold.it/40x40" alt="{{card.author}}" class="profile-small pull-left img-responsive" />
-					</div>
-					<div ng-if="goal.iconPath != ''">
-						<img src="/design/img/{{goal.iconPath}}" alt="" class="profile-small pull-left img-responsive" />
-					</div>
-					<p class="pull-right col-md-8">
-						{{goal.name}}
-					</p>
+					<a role="button" ng-click="openAside('right',true,'modules/goal/templates/goal-detail.html')" style="color: inherit;">
+						<table>
+							<tr>
+								<td>
+									<div ng-if="goal.iconPath == ''">
+										<img src="http://placehold.it/40x40" alt="{{card.author}}" class="profile-small pull-left img-responsive" />
+									</div>
+									<div ng-if="goal.iconPath != ''">
+										<img src="/design/img/{{goal.iconPath}}" alt="" class="profile-small pull-left img-responsive" />
+									</div>		
+								</td>
+								<td>
+									<p>{{goal.name}}</p>
+								</td>
+							</tr>
+						</table>
+					</a>
 				</div>
 				<div class="clear"></div>
 			</div>
