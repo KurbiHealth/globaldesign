@@ -16,6 +16,9 @@
 			<div class="clear"></div>
 		</div><!--END .sidebar-section-->	
 
+		<div ng-if="!goalsList">
+			<span style="display:block;overflow:auto;height:100px;position:relative;" us-spinner="{lines: 10, radius:15, width:8, length: 12}"></span>
+		</div>
 		<div ng-repeat="goal in goalsList | orderBy: '-created'">
 			<div class="sidebar-section table">
 				<div class="table-center" ng-click="loadGoalPath(goal.id)">
@@ -43,6 +46,9 @@
 			<div class="clear"></div>
 		</div><!--END .side-headline-->
 		
+		<div ng-if="!careTeamList">
+			<span style="display:block;overflow:auto;height:100px;position:relative;" us-spinner="{lines: 10, radius:15, width:8, length: 12}"></span>
+		</div>
 		<div ng-repeat="tm in careTeamList">
 			<div class="sidebar-section table">
 				<div class="table-center">
