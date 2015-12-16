@@ -108,7 +108,7 @@
 			<div class="clear"></div>
 		</div><!--END .side-headline-->
 
-		<div ng-if="!topSymptoms">
+		<div ng-if="!topSymptoms||topSymptoms.length==0">
 			<span style="display:block;overflow:auto;height:100px;position:relative;" us-spinner="{lines: 10, radius:15, width:8, length: 12}"></span>
 		</div>
 		<div class="sidebar-section table" ng-repeat="tSyms in topSymptoms|orderBy:topSymptomsOrder:topDescending|limitTo:topSymptomsLimit">
