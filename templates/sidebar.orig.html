@@ -1,0 +1,124 @@
+<div id="sidebar" class="col-md-2 hidden-sm hidden-xs">
+	
+	<div id="goal-block" ng-controller="GoalController">
+		<div class="side-headline table">
+			<div class="table-center">
+				<h2 class="pull-left">Your Current Goals</h2>
+				<a class="pull-right"><i class="fa fa-plus"></i></a>
+			</div>
+			<div class="clear"></div>
+		</div><!--END .side-headline-->
+
+		<div class="sidebar-section table">
+			<div class="table-center text-center">
+				<a class="btn btn-default" role="button" ng-click="openAside('right',true,'modules/goal/templates/activities.html')">Add New Goal</a>
+			</div><!--END .table-center-->
+			<div class="clear"></div>
+		</div><!--END .sidebar-section-->	
+
+
+		<div class="sidebar-section table">
+			<div class="table-center">
+				<a role="button" ng-click="openAside('right',true,'modules/goal/templates/goal-detail.html')" style="color: inherit;">
+					<table>
+						<tr>
+							<td>
+								<div>
+									<img src="/design/img/exercise.png" alt="" class="profile-small pull-left img-responsive" />
+								</div>		
+							</td>
+							<td>
+								<p>Build Endurance</p>
+							</td>
+						</tr>
+					</table>
+				</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+
+		<div ng-if="!goalsList">
+			<span style="display:block;overflow:auto;height:100px;position:relative;" us-spinner="{lines: 10, radius:15, width:8, length: 12}"></span>
+		</div>
+
+		<div ng-repeat="goal in goalsList | orderBy: '-created'">
+			<div class="sidebar-section table">
+				<div class="table-center" ng-click="loadGoalPath(goal.id)">
+					<a role="button" ng-click="openAside('right',true,'modules/goal/templates/goal-detail.html')" style="color: inherit;">
+						<table>
+							<tr>
+								<td>
+									<div ng-if="goal.iconPath == ''">
+										<img src="http://placehold.it/40x40" alt="{{card.author}}" class="profile-small pull-left img-responsive" />
+									</div>
+									<div ng-if="goal.iconPath != ''">
+										<img src="/design/img/{{goal.iconPath}}" alt="" class="profile-small pull-left img-responsive" />
+									</div>		
+								</td>
+								<td>
+									<p>{{goal.name}}</p>
+								</td>
+							</tr>
+						</table>
+					</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>	
+	</div><!--END #goal-block-->
+	
+	<div id="team-block">
+		<div class="side-headline table">
+			<div class="table-center">
+				<h2 class="pull-left">Your Care Team</h2>
+				<a class="pull-right"><i class="fa fa-plus"></i></a>
+			</div>
+			<div class="clear"></div>
+		</div><!--END .side-headline-->
+		
+		<div ng-if="!careTeamList">
+			<span style="display:block;overflow:auto;height:100px;position:relative;" us-spinner="{lines: 10, radius:15, width:8, length: 12}"></span>
+		</div>
+		<div ng-repeat="tm in careTeamList">
+			<div class="sidebar-section table">
+				<div class="table-center">
+					<a href="#" class="pull-left">
+						<div ng-if="tm.avatar == '' || tm.avatar==undfined">
+							<img src="http://placehold.it/40x40" alt="{{tm.firstName}} {{tm.lastName}}" height="40" width="40" class="profile-small pull-left" />
+						</div>
+						<div ng-if="tm.avatar != '' && tm.avatar != undefined">
+							<img src="/design/user_images/{{tm.avatar}}" alt="Member Name" class="profile-small" />
+						</div>
+					</a>
+					<p class="pull-left"><strong>{{tm.firstName}} {{tm.lastName}}</strong><br />{{tm.role}}</p>
+				</div><!--END .table-center-->
+				<div class="clear"></div>
+			</div><!--END .sidebar-section-->
+		</div><!--END careteam loop-->
+		
+	</div><!--END #team-block-->
+	
+	<div id="symptom-block">
+		<div class="side-headline table">
+			<div class="table-center">
+				<h2 class="pull-left">Persistent Symptoms</h2>
+				<a href="#" class="pull-right"><i class="fa fa-plus"></i></a>
+			</div>
+			<div class="clear"></div>
+		</div><!--END .side-headline-->
+
+		<div ng-if="!topSymptoms||topSymptoms.length==0">
+			<span style="display:block;overflow:auto;height:100px;position:relative;" us-spinner="{lines: 10, radius:15, width:8, length: 12}"></span>
+		</div>
+		<div class="sidebar-section table" ng-repeat="tSyms in topSymptoms|orderBy:topSymptomsOrder:topDescending|limitTo:topSymptomsLimit">
+			<div class="table-center">
+				<p class="pull-left"><i class="symptom-bullet {{topSeverityColorObj[tSyms.name]}} fa fa-circle"></i></p>
+				<p class="pull-left">{{tSyms.name}}</p>
+				<p class="pull-right">{{tSyms.date}}</p>
+			</div><!--END .table-center-->
+			<div class="clear"></div>
+		</div><!--END .sidebar-section-->
+	</div><!--END #symptom-block-->
+	
+</div><!--END #sidebar-->
