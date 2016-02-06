@@ -7,13 +7,18 @@
 p.name { display: none; }
 .goal-card:nth-child(3n) { margin-right: 15px; }
 #mobile-goal-btn { position: fixed; top: 81px; left: 100px; z-index: 99; }
-#journal-entry { top: 81px; left: 192px; z-index: 99; }
+#journal-entry { top: 81px; left: 20px; z-index: 99; }
 
 }
 
 /* tablets */
 @media(max-width: 991px) {
-
+	.hide-browse { display: none; }
+	.hide-search { display: none; }
+	.mobile-search-space {
+		margin-top: 20px;
+	}
+	
 }
 
 /* mobile */
@@ -46,6 +51,5 @@ body.wrapper-open {
 #post-box { display: none; }
 #logo { top: 15px; }
 #mobile-post-box { display: block; }
-#journal-entry { top: 81px; left: 192px; }
-
+#journal-entry { top: 81px; left: 20px; }
 }

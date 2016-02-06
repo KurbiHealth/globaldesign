@@ -3,20 +3,19 @@
 <!-- HEADER -->
 <div id="header" class="container-fluid table">
 	<div class="table-center">
-		<div id="logo">
-			<!--<a ui-sref="private.home"><img src="app/img/kurbi-logo@2x.png" width="35" height="40" alt="Kurbi" /></a>-->
-			<a href="#"><img src="app/img/kurbi-logo@2x.png" width="35" height="40" alt="Kurbi" /></a>
+		<div id="logo" class="pull-left">
+			<a ui-sref="private.home"><img src="design/img/kurbi-logo@2x.png" width="35" height="40" alt="Kurbi" /></a>
 		</div><!--END #logo-->
 		
-		<div id="post-box" class="col-sm-8 col-sm-offset-2">
-			<!-- ADD POST FORM -->
-			<!--<div add-post></div>-->
+		<!--<div id="post-box" class="col-sm-8 col-sm-offset-2">
+			<!-- ADD POST FORM --*>
+			<!--<div add-post></div>--*>
 			<h1 style="color:white;margin-left: -34px;">KURBI</h1>
-			<!-- /ADD POST FORM -->
-		</div><!--END #post-box-->
+			<!-- /ADD POST FORM --*>
+		</div><!--END #post-box--*>-->
 		
 
-		<div id="profile">
+		<div id="profile" class="pull-right">
 			<a href="#" class="pull-left">
 				<div ng-if="goal.iconPath == ''">
 					<img src="http://placehold.it/40x40" alt="{{card.author}}" height="40" width="40" class="profile-small" />
@@ -35,6 +34,8 @@
 			  <li><a href="#" ng-click="logOut()">Logout</a></li>
 			</ul>
 		</div><!--END #profile-->
+		
+		<div class="clear"></div>
 		
 <!--		<div id="mobile-nav-btn">
 			<a ng-click="openAside('right',true,'design/templates/mobileMenu.html');"><i class="fa fa-bars"></i></a>
@@ -67,14 +68,14 @@
 
 <div id="page-container" class="container-fluid">
 	
-	<div id="mobile-post-box" class="row">
+	<!--<div id="mobile-post-box" class="row">
 		<div class="col-sm-12">
-			<!-- ADD POST FORM -->
-			<!--<div add-post></div>-->
+			<!-- ADD POST FORM --*>
+			<!--<div add-post></div>--*>
 			<p>KURBI</p>
-			<!-- /ADD POST FORM -->
+			<!-- /ADD POST FORM --*>
 		</div>
-	</div><!--END #mobile-post-box-->
+	</div><!--END #mobile-post-box--*>-->
 	
 	<div class="row">
 		

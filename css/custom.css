@@ -29,8 +29,8 @@ HEADER
 }
 
 #logo {
-	position: absolute;
-	left: 20px;
+/*	position: absolute;*/
+/*	left: 20px;*/
 }
 
 #logo a img {
@@ -236,8 +236,8 @@ SIDEBAR
 }
 
 #profile {
-	position: absolute;
-	right: 20px;
+/*	position: absolute;
+	right: 20px;*/
 }
 
 #profile p a {
