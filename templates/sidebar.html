@@ -14,9 +14,15 @@
 		</div>
 		<div class="sidebar-section table" ng-repeat="tSyms in topSymptoms|orderBy:topSymptomsOrder:topDescending|limitTo:topSymptomsLimit">
 			<div class="table-center">
-				<p class="pull-left"><i class="symptom-bullet {{topSeverityColorObj[tSyms.name]}} fa fa-circle"></i></p>
-				<p class="pull-left">{{tSyms.name}}</p>
-				<p class="pull-right">{{tSyms.date}}</p>
+				<table>
+					<tr>
+						<td><i class="symptom-bullet {{topSeverityColorObj[tSyms.name]}} fa fa-circle"></i></td>
+						<td>
+							{{tSyms.name}}<br />
+							{{tSyms.date}}
+						</td>
+					</tr>
+				</table>
 			</div><!--END .table-center-->
 			<div class="clear"></div>
 		</div><!--END .sidebar-section-->
